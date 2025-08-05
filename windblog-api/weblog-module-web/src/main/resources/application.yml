@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    # 默认激活dev环境
+    active: prod
+jwt:
+  # 签发人
+  issuer: zhixing
+  secret: 3GD0IY7tXO0fPJjcZyc5UVnSsROiWSfjELIhU7mnxgshJ98jp9hm8YYPbMCaPJzIyuBuaBK9jtFbUtjVabRdkA==
+  # token 过期时间（单位：分钟） 24*60
+  tokenExpireTime: 1140
+  # token 请求头中的 key 值
+  tokenHeaderKey: Authorization
+  # token 请求头中的 value 值前缀
+  tokenPrefix: Bearer

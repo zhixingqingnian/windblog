@@ -1,0 +1,54 @@
+// 全局主题变量
+$main-color: #368077; // 主题色
+$danger-color: #f56c6c; // 危险色
+$menu-bg-color: #18191f; // 菜单背景色
+// 饿了么组件样式覆盖
+@use "@/styles/element.scss" as *;
+// 自定义样式
+@for $i from 0 through 100 {
+  .mt-#{$i} {
+    margin-top: #{$i}px !important;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i}px !important;
+  }
+  .mr-#{$i} {
+    margin-right: #{$i}px !important;
+  }
+}
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+// nprogress 进度条颜色
+#nprogress .bar {
+  background: $main-color !important;
+}
+#nprogress .spinner-icon {
+  border-top-color: $main-color !important;
+  border-left-color: $main-color !important;
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px $main-color, 0 0 5px $main-color !important;
+}
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
