@@ -60,8 +60,8 @@ const userStore = useUserStore();
 const loading = ref<boolean>(false); // 页面加载
 const formRef = ref<FormInstance>(); // 表单实例
 const formValue = ref({
-  username: "admin",
-  password: "qwer1234",
+  username: "",
+  password: "",
 }); // 表单参数
 const rules: FormRules = {
   username: [{ required: true, message: "请输入用户名", trigger: "blur" }],
